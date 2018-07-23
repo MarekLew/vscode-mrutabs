@@ -2,13 +2,14 @@
     "name": "mrutabs",
     "displayName": "MRUTabs",
     "description": "Sort tabs in MRU order.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "MarekSapota",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/maarons/vscode-mrutabs.git"
     },
+    "icon": "images/if_tab_103718.png",
     "engines": {
         "vscode": "^1.15.0"
     },
