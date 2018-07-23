@@ -4,8 +4,13 @@
     "description": "Sort tabs in MRU order.",
     "version": "0.0.1",
     "publisher": "MarekSapota",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maarons/vscode-mrutabs.git"
+    },
     "engines": {
-        "vscode": "^1.5.0"
+        "vscode": "^1.15.0"
     },
     "categories": [
         "Other"
@@ -16,10 +21,12 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "com.sapota.marek.mrutabs.move",
-            "title": "Move tab to the first position"
-        }]
+        "commands": [
+            {
+                "command": "com.sapota.marek.mrutabs.move",
+                "title": "Move tab to the first position"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
@@ -27,11 +34,11 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "vsce": "^1.15.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.18",
+        "mocha": "^5.2.0",
+        "vsce": "^1.44.0",
+        "@types/node": "^10.2.2",
+        "@types/mocha": "^5.2.5"
     }
 }
